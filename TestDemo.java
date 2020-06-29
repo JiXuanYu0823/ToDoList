@@ -105,7 +105,7 @@ public class TestDemo {
 				String event = in.nextLine();
 				System.out.println("请输入事件的截止日期：");
 				String ddl = in.nextLine();
-				log.addEvent();
+				log.addEvent(event,ddl,false);
 			}
 			else if (order == 2) {
 				System.out.println("请输入事项序列号：");
