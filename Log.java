@@ -15,7 +15,9 @@ public class Log implements Serializable {
 		events = new ArrayList<>();
 	}
 	//添加待办事件
-	public void addEvent(){
+	public void addEvent(String event,String ddl,boolean status){
+		Event eve=new Event(event,ddl,status);
+		this.events.add(eve);
 	}
 	//删除待办事件
 	public void delEvent(int index){
