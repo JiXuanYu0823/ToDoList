@@ -122,9 +122,9 @@ public class TestDemo {
 					System.out.println("请输入您想变更状态至：(\"未完成！\"（1）  \"已完成！\"（2）\")");
 					int sta = in.nextInt();
 					if (sta == 1)
-						log.chanStatus();
+						log.chanStatus(index - 1, false);
 					else if (sta == 2)
-						log.chanStatus();
+						log.chanStatus(index - 1, true);
 				}
 			}
 			else if(order == 4){

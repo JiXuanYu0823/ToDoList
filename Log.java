@@ -22,7 +22,8 @@ public class Log implements Serializable {
 		events.remove(index);
 	}
 	//改变待办事件状态
-	public void chanStatus(){
+	public void chanStatus(int index,boolean b){
+		events.get(index).setStatus(b);
 	}
 	//展示待办事件列表
 	public void showEvents(){
