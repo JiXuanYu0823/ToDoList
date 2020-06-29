@@ -18,7 +18,8 @@ public class Log implements Serializable {
 	public void addEvent(){
 	}
 	//删除待办事件
-	public void delEvent(){
+	public void delEvent(int index){
+		events.remove(index);
 	}
 	//改变待办事件状态
 	public void chanStatus(){

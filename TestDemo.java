@@ -112,7 +112,7 @@ public class TestDemo {
 				int index = in.nextInt();
 				if(index > log.countEvents());
 				else
-					log.delEvent();
+					log.delEvent(index - 1);
 			}
 			else if (order == 3) {
 				System.out.println("请输入事件序列号：");
